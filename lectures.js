@@ -35,6 +35,13 @@ const finlandPopulation = 6000000;
 const morePeopleMyCountry = population > finlandPopulation;
 const averagePopulation = 3300000;
 const averageCountry = averagePopulation > population;
-const description = 'Portugal is in Europe, and its 11 million people speak portuguese'
+const description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+
+// Lecture: String and Template literals
+
+console.log(`Portugal is in Europe,
+and its 11 million
+people speak portuguese`);
+
  
 
