@@ -1,3 +1,5 @@
+// Fundamentals - Part 1
+
 /*
 // lecture: values and variables
 
@@ -92,4 +94,35 @@ if(language === 'english' && population < 50  &&  !island){
     console.log('Sweden doesnt meet your criteria');
 }
 
+// LECTURE : The switch statement
+
+language = 'swedish';
+
+switch(language){
+    case 'chinese or mandarin':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great Language too!');
+}
 */
+// Lecture : The Conditional ( Ternary Operator)
+
+const population = 8;
+
+const average = population > 33 ? console.log('swedens population is above average') : console.log('swedens population is below average');
+
+
+

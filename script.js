@@ -143,7 +143,7 @@ if(favorite == 23){
     console.log('Number is not 23 or 7');
 }
 if(favorite !== 23)console.log('why not 23?');
-*/
+
 
 const hasDriversLicense = true;
 const hasGoodVision = true;
@@ -168,3 +168,46 @@ if(hasDriversLicense && hasGoodVision && !isTired){
 } else {
     console.log('someone else should be driving....')
 }
+
+const day = 'thursday';
+
+switch(day){
+    case 'monday':
+        console.log('Plan course struccture');
+        console.log('Go to code meetup');
+        break;
+    case 'tuesday':
+        console.log('prepare video');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('programming');
+        break;
+    case 'friday':
+        console.log('Record video');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy weekend');
+        break;
+    default:
+        console.log('not a valid day');
+}
+
+const age = 23;
+age >= 18 ? console.log('I like to drink wine'):console.log('I like to drink wine');
+
+const drink = age >= 18 ? 'wine': 'water';
+console.log(drink);
+
+let drink2;
+if(age >= 18){
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine': 'water'}`); // templete literal
+*/
+
