@@ -74,7 +74,6 @@ lines');
 console.log(`String 
 multiple 
 lines`);
-*/
 
 const age = 15;
 
@@ -95,3 +94,77 @@ if(birthYear <= 2000) {
     century = 21;
 }
 console.log(century);
+
+const inputYear = ' 1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear ) + 18 );
+
+console.log(Number('sara'));
+
+console.log(String(23), 23);
+
+console.log('I am' + 23 + 'years old');
+
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Sara'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+
+if(money) {
+    console.log('Dont spend it all:');
+} else {
+    console.log('You should get a job!');
+}
+
+let height = 123;
+if(height) {
+    console.log('Yay! Height is defined');
+} else {
+    console.log('Height is undefined');
+}
+
+const age = 10;
+if(age === 18) console.log('You just became an adult');
+
+const favorite = Number(prompt('Whats your favorite number?'));
+
+console.log(favorite);
+console.log(typeof favorite);
+
+if(favorite == 23){
+    console.log('cool! 23 is an amazing number!');
+} else if (favorite === 7){
+    console.log('7 is also a cool number');
+} else {
+    console.log('Number is not 23 or 7');
+}
+if(favorite !== 23)console.log('why not 23?');
+*/
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if(shouldDrive){
+    console.log('sarah is able to drive')
+} else {
+    console.log('someone else should be driving....')
+}
+
+const isTired = false;
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired){
+    console.log('sarah is able to drive')
+} else {
+    console.log('someone else should be driving....')
+}
