@@ -1,33 +1,30 @@
-//BMI = mass / height ** 2;
+'use strict'
 
-// Testdata 1
+const calcAverage = (score1, score2, score3)=> {
+    return (score1 + score2 + score3)/3;
+}
 
-let markMass= 78;
-let markHeight = 1.69;
-let johnsMass= 92;
-let johnHeight= 1.95;
+let dolphins=calcAverage(44,23,71);
+let koalas = calcAverage(65,54, 49);
 
-let markBMI = markMass / markHeight ** 2;
-console.log(markBMI);
+console.log(dolphins, koalas)
 
-let johnBMI = johnsMass / johnHeight ** 2;
-console.log(johnBMI);
+const checkWinner= ( avgdolphins, avgkoalas)=> {
 
-let markHigherBMI = markBMI > johnBMI;
-console.log(markHigherBMI);
+    if(avgdolphins >= 2 * avgkoalas){
+        console.log(`Dolphins wins the trophy( ${avgdolphins} vs ${avgkoalas})`);
+    } else if (avgkoalas >= 2 * avgdolphins){
+        console.log(`Koalas wins the trophy (${avgkoalas} vs ${avgdolphins})`)
+    } else {
+        console.log('nobody wins');
+    }
+}
 
-// Testdata 2
+checkWinner(koalas, dolphins);
 
- markMass= 95;
- markHeight = 1.88;
- johnsMass= 85;
- johnHeight= 1.76;
 
-markBMI = markMass / markHeight ** 2;
-console.log(markBMI);
+dolphins = calcAverage(85, 54, 41);
+koalas = calcAverage(23, 34, 27);
 
-johnBMI = johnsMass/ johnHeight ** 2;
-console.log(johnBMI);
-
-markHigherBMI = markBMI > johnBMI;
-console.log(markHigherBMI);
+console.log(dolphins, koalas);
+checkWinner(koalas, dolphins);
