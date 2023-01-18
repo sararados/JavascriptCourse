@@ -41,7 +41,6 @@ const china = percentageOfWorld2(1412);
 
 console.log(sweden, usa, china);
 
-
 // Lecture: Arrow Functions
 
 const percentegeOfWorld3 = population => (population/ 7900) * 100;
@@ -60,4 +59,35 @@ function describePopulation( country, population){
     console.log(description);
 }
 describePopulation('sweden', 8);
+
+// Lecture : Introduction to Arrays
+
+const population = [8, 6, 1442];
+
+if(population.length === 3) {
+    console.log(true);
+}
+
+const percentages = [percentegeOfWorld3(population[0]), percentegeOfWorld3(population[1]), percentegeOfWorld3(population[2])];
+
+console.log(percentages);
+
 */
+// Lecture: Basic Array Operations
+
+const neighbours = ['Danmark', 'Norge', 'Finland'];
+console.log(neighbours);
+
+neighbours.push('Utopia');
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if(!neighbours.includes('Germany')) {
+    console.log('Probably not a central European country :D');
+}
+
+neighbours[neighbours.indexOf('Norge')]= 'Republic of Norge';
+
+console.log(neighbours);
