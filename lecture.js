@@ -72,7 +72,7 @@ const percentages = [percentegeOfWorld3(population[0]), percentegeOfWorld3(popul
 
 console.log(percentages);
 
-*/
+
 // Lecture: Basic Array Operations
 
 const neighbours = ['Danmark', 'Norge', 'Finland'];
@@ -91,3 +91,48 @@ if(!neighbours.includes('Germany')) {
 neighbours[neighbours.indexOf('Norge')]= 'Republic of Norge';
 
 console.log(neighbours);
+
+// Lecture: Introduction to Objects
+
+const myCountry = {
+    country: 'Sweden',
+    capital: 'Stockholm', 
+    language: 'Swedish',
+    population: 8,
+    neighbours: ['Danmark', 'Norge', 'Finland']
+};
+
+// lecture: Dot vs Brackets
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+myCountry['population'] -= 2;
+
+console.log(`${myCountry.population}`);
+console.log(`${myCountry['population']}`);
+
+
+// Lecture: Object Methods
+
+const myCountry = {
+    country: 'Sweden',
+    capital: 'Stockholm', 
+    language: 'Swedish',
+    population: 8,
+    neighbours: ['Danmark', 'Norge', 'Finland'],
+
+    describe: function() {
+        this.info = `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbours.length} neighbouring countries and capital called ${this.capital}.`;
+        return this.info;
+    },
+    checkIsland:function() {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+      
+    }
+};
+
+myCountry.describe();
+myCountry.checkIsland();
+console.log(myCountry);
+*/
