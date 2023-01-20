@@ -135,4 +135,49 @@ const myCountry = {
 myCountry.describe();
 myCountry.checkIsland();
 console.log(myCountry);
+
+
+// Lecture: Iteration the for loop
+
+for( let vote = 1; vote <= 50; vote++) {
+    console.log(`Voter number ${vote} is currently voting`);
+}
+
+//Lecture: Looping Arrays, Breaking and Continuing
+const percentegeOfWorld3 = population => (population/ 7900) * 100;
+
+const population = [8, 6, 1442, 340];
+const percentages = [];
+
+for( let i = 0; i < population.length; i++) {
+    const perc = percentegeOfWorld3(population[i]);
+    percentages.push(perc);
+}
+
+console.log(percentages);
+
+// Lecture: Looping Backwards and Loops in Loops
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for( let i = 0; i < listOfNeighbours.length; i++) {
+    for(let x = 0; x < listOfNeighbours[i].length; x++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][x]}`);
+    }
+}
+
+// Lecture: The while loop
+
+const population = [8, 6, 1442, 340];
+const percentegeOfWorld3 = population => (population/ 7900) * 100;
+
+const percentages1 = [];
+let i = 0;
+
+while(i < population.length) {
+    const perc = percentegeOfWorld3(population[i]);
+    percentages1.push(perc);
+    i++;
+}
+console.log(percentages1);
 */
